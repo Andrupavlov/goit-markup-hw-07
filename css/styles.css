@@ -1,0 +1,1260 @@
+/* цвет заголовка #212121 */
+/* цвет большего количества текста #757575 */
+/* акцентный цвет (синий) #2196F3 */
+/* цвет фона #FFFFFF */
+/* 2й цвет фона #F5F4FA */
+/* цвет футера и фон заголовка #2F303A */
+
+:root {
+    --title-text-color: #212121;
+    --primary-text-color: #757575;
+    --white-text: #FFFFFF;
+    --ascent-color: #2196F3;
+    --background-color: #FFFFFF;
+    --second-background-color: #F5F4FA;
+    --footer-hero-color: #2F303A;
+    --icon-gray: #AFB1B8;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--title-text-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Удаление точек у спсиков */
+.list {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #ECECEC;
+}
+
+/* Логотип */
+
+/* Общие настройки лого */
+.logo {
+    text-decoration: none;
+}
+
+/* 1й фрагмент лого (по цвету) */
+.logo-1part {
+    color: var(--ascent-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+/* 2й фрагмент лого (по цвету) */
+.logo-2part {
+    color: var(--title-text-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+/* Отступ лоя лого */
+.all-logo {
+    margin-right: 93px;
+}
+
+
+/* Навигация по сайту ------------------------------------------------------------------ */
+/* Навигация по сайту - при наведении */
+
+/* список меню */
+.site-nav {
+    display: flex;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--ascent-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Подсветка активного меню */
+.site-nav .current {
+    color: var(--ascent-color);
+    position: relative;
+}
+
+.site-nav .current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+
+    height: 4px;
+    background-color: var(--ascent-color);
+    border-radius: 2px;
+}
+
+/* Контакты ---------------------------------------------------------------------------- */
+
+/* Почта, телефон */
+.contacts-header .contacts-logo {
+    display: block;
+    width: 16px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.contacts-header .item a {
+    display: flex;
+}
+
+.contacts-header {
+    display: block;
+    color: var(--primary-text-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+.contacts-header .item .contacts {
+    fill: var(--primary-text-color);
+}
+
+/* Почта, телефон - при наведении */
+.contacts-header .item .contacts:hover,
+.contacts-header .item .contacts:focus {
+    color: var(--ascent-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+    fill: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-container-nav {
+    display: flex;
+}
+
+.contacts-header {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-header .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.main-container .all-logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.contacts-header .header-email {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+
+
+/* Герой ------------------------------------------------------------------------------- */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--footer-hero-color);
+
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image:
+        linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/hero-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Герой-заголовок */
+.hero-title {
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    width: 696px;
+
+    color: var(--white-text);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+
+/* Кнопка-герой */
+.hero-button {
+    display: block;
+    border: none;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 14px 32px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    color: var(--white-text);
+    background-color: var(--ascent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background: #188CE8;
+    cursor: pointer;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Удаление 2 пикселей у img */
+.img {
+    display: block;
+}
+
+
+/* Все секции */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    color: var(--primary-text-color);
+}
+
+.section.no-padding-top {
+    padding-top: 0;
+}
+
+/* Заголовок секции */
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* секция чем мы занимаемся */
+.what-doing {
+    position: relative;
+}
+
+.what-doing-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+
+.what-doing-text .text {
+    display: block;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-text);
+}
+
+
+/* секция с преимуществами */
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Список преимуществ */
+.feature-list .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+
+/* Описание преимуществ, каждого типа -------------------------------------------------- */
+.feature-list .paragraph {
+    width: 270px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.feature-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: var(--second-background-color);
+}
+
+.feature .feature-pic {
+    display: block;
+
+
+    width: 70px;
+    height: 70px;
+}
+
+/* Наша команда ------------------------------------------------------------------------ */
+
+.img-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Секцуия с сотрудниками */
+.ouer-teem-section {
+    background-color: var(--second-background-color);
+}
+
+/* Карточка сотрудника */
+.employee {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--background-color);
+}
+
+.employee-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* имена сотрудников */
+.title-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* должность сотрудника */
+.title-position {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Соцсети сотрудников ---------------------------------------------------------------- */
+.employee-social {
+    display: flex;
+
+    margin-left: 32px;
+    justify-content: space-between;
+    width: 206px;
+}
+
+.employee-social .employee-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    fill: var(--icon-gray);
+    border-radius: 50%;
+}
+
+.employee-icon .employee-social-logo {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+}
+
+.employee-icon:hover,
+.employee-icon:focus {
+    fill: var(--white-text);
+    background-color: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Клиенты ----------------------------------------------------------------------------- */
+/* Список клиентов */
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-list .clients {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 4px;
+    border: 1px solid var(--icon-gray);
+    fill: var(--icon-gray);
+}
+
+.client-logo {
+    display: block;
+    width: 106px;
+    height: 60px;
+}
+
+.clients-list .clients:hover,
+.clients-list .clients:focus {
+    border: 1px solid var(--ascent-color);
+    fill: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* футер -------------------------------------------------------------- */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--footer-hero-color);
+}
+
+.footer .logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer .logo .logo-2part {
+    color: var(--white-text);
+}
+
+.footer-address {
+    display: block;
+    width: 221px;
+}
+
+/* Физический адрес компании */
+.geo-address {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 9px;
+
+    color: var(--white-text);
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer .contacts {
+    display: block;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.contacts-email {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.contacts {
+    color: var(--primary-text-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+/* Почта, телефон - при наведении */
+.contacts:hover,
+.contacts:focus {
+    color: var(--ascent-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-join {
+    margin-bottom: 20px;
+}
+
+.social-network {
+    margin-left: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+
+    color: var(--white-text);
+}
+
+.social-network-list {
+    display: flex;
+    width: 206px;
+    justify-content: space-between
+}
+
+.footer-social-logo {
+    display: block;
+    width: 44px;
+    height: 44px;
+
+    padding: 12px;
+
+    fill: var(--white-text)
+}
+
+.social-network-list .footer-icon {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+    background: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Форма футтер ----------------------------------------------------------------------- */
+
+.form-subscribe {
+    margin-left: 93px;
+}
+
+.form-subscribe .form-subscribe-tit {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+
+    color: var(--white-text);
+
+    margin-bottom: 20px;
+}
+
+.form-subscribe-box {
+    display: flex;
+}
+
+.form-subscribe-input {
+    width: 358px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    margin-right: 12px;
+
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-subscribe-input:focus-within {
+    outline: none;
+}
+
+.form-subscribe-box input {
+    display: block;
+    height: 50px;
+}
+
+.form-subscribe-logo {
+    /* display: block; */
+    width: 24px;
+    height: 24px;
+    padding: 0;
+
+    margin-left: 10px;
+
+    fill: var(--white-text);
+}
+
+.form-subscribe-button {
+    border: none;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 14px 32px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    color: var(--white-text);
+    background-color: var(--ascent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.form-subscribe-button:hover,
+.form-subscribe-button:focus {
+    background: #188CE8;
+    cursor: pointer;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* модальное окно --------------------------------------------------------------------- */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+
+    transition-duration: 240ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 581px;
+    background-color: var(--background-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transition-property: transform, opacity, visibility, pointer-events;
+    transition-duration: 240ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    background: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.modal-close-logo {
+    display: block;
+    width: 11px;
+    height: 11px;
+    fill: #000000;
+}
+
+.modal-close-button:hover .modal-close-logo {
+    fill: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* состояние до закрытия модалки ------------------------------------------------------- */
+.is-hidden .modal {
+    transform: translate(-50%, -50%) translateY(100%) scale(0.4) rotate(10deg);
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Оформление формы модалкт ------------------------------------------------------------ */
+.modal {
+    padding: 40px;
+}
+
+.form-tit {
+    display: flex;
+    justify-content: center;
+}
+
+.form-tit p {
+    display: block;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 12px;
+
+    color: var(--title-text-color);
+}
+
+.form-all-data {
+    margin-bottom: 20px;
+}
+
+.form-field {
+    /* outline: 1px solid #000000; */
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+}
+
+.form-text-rec {
+    position: relative;
+}
+
+.form-icon {
+    /* fill: var(--title-text-color); */
+    width: 18px;
+    height: 18px;
+
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-input:focus-within {
+    border: 1px solid var(--ascent-color);
+    outline: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-text-rec:focus-within .form-icon {
+    fill: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.form-all-data .form-field:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    margin-bottom: 4px;
+
+    color: var(--primary-text-color);
+}
+
+
+.form-input {
+    height: 40px;
+    width: 100%;
+
+    padding-right: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 41px;
+    margin: 0;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+}
+
+
+.form-text-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-text-input:focus-visible {
+    border: 1px solid var(--ascent-color);
+    outline: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-text-input {
+    resize: none;
+    border: none;
+    height: 120px;
+    width: 100%;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+/* Чек бокс --------------------------------------------------------------- */
+.form-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    margin-bottom: 30px;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check-logo {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+
+    margin-right: 7px;
+}
+
+.agreement-link {
+    color: var(--ascent-color);
+    margin-left: 4px;
+}
+
+.check-svg {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    opacity: 0;
+}
+
+.checkbox:checked+.check-logo .check-svg {
+    opacity: 1;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked+.check-logo {
+    border: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Кнопка отправки формы ----------------------------------------------------------- */
+.form-button {
+    display: flex;
+    justify-content: center;
+}
+
+.form-button button {
+    border: none;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 14px 32px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    color: var(--white-text);
+    background-color: var(--ascent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+
+.form-button button:hover,
+.form-button button:focus {
+    background: #188CE8;
+    cursor: pointer;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+/*--------------------------- Страница портфолио -------------------------------------- */
+
+/* Кнопки фильтра */
+
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter-button {
+    display: block;
+    border: none;
+    min-width: 73px;
+    height: 38px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 4px;
+
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+
+.list .button:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    color: var(--white-text);
+    background-color: var(--ascent-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* Список проектов */
+
+.project-img {
+    display: block;
+}
+
+
+/* Коробка со списком проектов */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Список карточек проектов */
+.project-card {
+    display: block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* Убрать у проавой 3й карточке марджин */
+.project-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* Выбрать и убрать марджин у карточек снизу */
+.project-card:nth-last-child(-n +3) {
+    margin-bottom: 0;
+}
+
+/* Описание проекта */
+.protject-description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #EEEEEE;
+}
+
+/* Заголовок */
+.projects-list .title {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+/* Тип проекта */
+.project-card p {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.project-card-link {
+    display: block;
+    text-decoration: none;
+}
+
+.project-card-link:hover,
+.project-card-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    /* анимация для синей всплывашки на карточк... ------------------------- */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+}
+
+
+/* вспливашка с подробным описание проекта в портфолио -------------------- */
+.project-pic {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-pic .project-info {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow: auto;
+
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--white-text);
+
+
+    background: rgba(33, 150, 243, 0.9);
+}
+
+.project-pic .project-info {
+    overflow: hidden;
+    transform: translateY(100%);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+}
+
+.project-card-link:hover .project-pic .project-info,
+.project-card-link:focus .project-pic .project-info {
+    transform: translateY(0);
+}
