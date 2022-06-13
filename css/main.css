@@ -428,6 +428,7 @@ p {
   width: 16px;
   height: 80px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 
 .contacts-header .item a {
@@ -467,6 +468,15 @@ p {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
+  fill: var(--ascent-color);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-header .contacts:hover .contacts-logo,
+.contacts-header .contacts:focus .contacts-logo {
   fill: var(--ascent-color);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;

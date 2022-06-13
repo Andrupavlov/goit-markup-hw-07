@@ -1,32 +1,32 @@
 // Все переменные ------------------------------
-@import './utils/vars';
+@import "./utils/vars";
 // Нормализация css через файл -----------------
-@import './utils/normalize';
+@import "./utils/normalize";
 
 // Общие css настройки -------------------------
-@import './components/global-settings';
+@import "./components/global-settings";
 
-@import './components/header';
-@import './components/header-logo';
-@import './components/header-site-nav';
-@import './components/header-contacts';
+@import "./components/header";
+@import "./components/header-logo";
+@import "./components/header-site-nav";
+@import "./components/header-contacts";
 
-@import './components/hero';
+@import "./components/hero";
 
-@import './components/section';
-@import './components/feature-list';
-@import './components/what-doing';
-@import './components/team-list';
-@import './components/clients-list';
+@import "./components/section";
+@import "./components/feature-list";
+@import "./components/what-doing";
+@import "./components/team-list";
+@import "./components/clients-list";
 
-@import './components/footer';
-@import './components/footer-social';
-@import './components/footer-form';
+@import "./components/footer";
+@import "./components/footer-social";
+@import "./components/footer-form";
 
 // Модальное окно ------------------------------
-@import './components/modal';
-@import './components/modal-order-service';
+@import "./components/modal";
+@import "./components/modal-order-service";
 
 // Страница портфолио --------------------------
-@import './components/portfolio';
-@import './components/portfolio-card';
+@import "./components/portfolio";
+@import "./components/portfolio-card";
