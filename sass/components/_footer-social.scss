@@ -1,0 +1,46 @@
+// Соц.сети
+
+.social-join {
+    margin-bottom: 20px;
+}
+
+.social-network {
+    margin-left: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+
+    color: var(--white-text);
+}
+
+.social-network-list {
+    display: flex;
+    width: 206px;
+    justify-content: space-between
+}
+
+.footer-social-logo {
+    display: block;
+    width: 44px;
+    height: 44px;
+
+    padding: 12px;
+
+    fill: var(--white-text)
+}
+
+.social-network-list .footer-icon {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+    background: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

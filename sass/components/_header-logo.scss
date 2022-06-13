@@ -1,0 +1,33 @@
+/* Логотип header */
+
+/* Общие настройки лого */
+.logo {
+    text-decoration: none;
+}
+
+/* 1й фрагмент лого (по цвету) */
+.logo-1part {
+    color: var(--ascent-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+/* 2й фрагмент лого (по цвету) */
+.logo-2part {
+    color: var(--title-text-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+/* Отступ лоя лого */
+.all-logo {
+    margin-right: 93px;
+}

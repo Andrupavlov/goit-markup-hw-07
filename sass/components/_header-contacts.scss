@@ -1,0 +1,88 @@
+/* Контакты */
+
+/* Почта, телефон */
+.contacts-header .contacts-logo {
+    display: block;
+    width: 16px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.contacts-header .item a {
+    display: flex;
+}
+
+.contacts-header {
+    display: block;
+    color: var(--primary-text-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+.contacts-header .contacts {
+    color: var(--primary-text-color);
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    
+    text-decoration: none;
+}
+
+/* Почта, телефон - при наведении */
+.contacts-header .contacts:hover,
+.contacts-header .contacts:focus {
+    color: var(--ascent-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+    fill: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-container-nav {
+    display: flex;
+}
+
+.contacts-header {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-header .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.main-container .all-logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.contacts-header .header-email {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}

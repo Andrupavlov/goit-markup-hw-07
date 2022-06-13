@@ -1,0 +1,93 @@
+/* Форма футтер */
+
+.form-subscribe {
+    margin-left: 93px;
+}
+
+.form-subscribe .form-subscribe-tit {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+
+    color: var(--white-text);
+
+    margin-bottom: 20px;
+}
+
+.form-subscribe-box {
+    display: flex;
+}
+
+.form-subscribe-input {
+    width: 358px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    margin-right: 12px;
+
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-subscribe-input:focus-within {
+    outline: none;
+}
+
+.form-subscribe-box input {
+    display: block;
+    height: 50px;
+}
+
+.form-subscribe-logo {
+    /* display: block; */
+    width: 24px;
+    height: 24px;
+    padding: 0;
+
+    margin-left: 10px;
+
+    fill: var(--white-text);
+}
+
+.form-subscribe-button {
+    border: none;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 14px 32px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    color: var(--white-text);
+    background-color: var(--ascent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.form-subscribe-button:hover,
+.form-subscribe-button:focus {
+    background: #188CE8;
+    cursor: pointer;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

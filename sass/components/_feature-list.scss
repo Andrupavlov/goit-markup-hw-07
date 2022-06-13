@@ -1,0 +1,47 @@
+/* секция с преимуществами */
+.feature-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Список преимуществ */
+.feature-list .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+/* Описание преимуществ, каждого типа */
+.feature-list .paragraph {
+    width: 270px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.feature-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: var(--second-background-color);
+}
+
+.feature .feature-pic {
+    display: block;
+    width: 70px;
+    height: 70px;
+}

@@ -1,0 +1,78 @@
+/* футер */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--footer-hero-color);
+}
+
+.footer .logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer .logo .logo-2part {
+    color: var(--white-text);
+}
+
+.footer-address {
+    display: block;
+    width: 221px;
+}
+
+/* Физический адрес компании */
+.geo-address {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 9px;
+
+    color: var(--white-text);
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer .contacts {
+    display: block;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.contacts-email {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.footer-address .contacts {
+    color: var(--primary-text-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+/* Почта, телефон - при наведении */
+.footer-address .contacts:hover,
+.footer-address .contacts:focus {
+    color: var(--ascent-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,124 @@
+/* Портфолио Список проектов */
+.project-img {
+    display: block;
+}
+
+/* Коробка со списком проектов */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Список карточек проектов */
+.project-card {
+    display: block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* Убрать у проавой 3й карточке марджин */
+.project-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* Выбрать и убрать марджин у карточек снизу */
+.project-card:nth-last-child(-n +3) {
+    margin-bottom: 0;
+}
+
+/* Описание проекта */
+.protject-description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #EEEEEE;
+}
+
+/* Заголовок */
+.projects-list .title {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+/* Тип проекта */
+.project-card p {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.project-card-link {
+    display: block;
+    text-decoration: none;
+}
+
+.project-card-link:hover,
+.project-card-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    /* анимация для синей всплывашки на карточк... ------------------------- */
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+}
+
+
+/* вспливашка с подробным описание проекта в портфолио -------------------- */
+.project-pic {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-pic .project-info {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow: auto;
+
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--white-text);
+
+
+    background: rgba(33, 150, 243, 0.9);
+}
+
+.project-pic .project-info {
+    overflow: hidden;
+    transform: translateY(100%);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+}
+
+.project-card-link:hover .project-pic .project-info,
+.project-card-link:focus .project-pic .project-info {
+    transform: translateY(0);
+}
