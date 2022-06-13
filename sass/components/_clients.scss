@@ -1,0 +1,34 @@
+// Список клиентов
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+
+  border-radius: 4px;
+  border: 1px solid var(--icon-gray);
+  fill: var(--icon-gray);
+}
+
+.clients__logo {
+  display: block;
+  width: 106px;
+  height: 60px;
+}
+
+.clients__item:hover,
+.clients__item:focus {
+  border: 1px solid var(--ascent-color);
+  fill: var(--ascent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

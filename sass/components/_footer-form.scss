@@ -1,93 +1,87 @@
-/* Форма футтер */
+// Форма подписки для футтера
 
 .form-subscribe {
-    margin-left: 93px;
+  margin-left: 93px;
 }
 
-.form-subscribe .form-subscribe-tit {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    text-transform: uppercase;
+.form-subscribe__title {
+  margin-bottom: 20px;
 
-    color: var(--white-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
 
-    margin-bottom: 20px;
+  color: var(--white-text);
 }
 
-.form-subscribe-box {
-    display: flex;
+.form-subscribe__block {
+  display: flex;
 }
 
-.form-subscribe-input {
-    width: 358px;
-    padding-left: 16px;
-    padding-right: 16px;
+.form-subscribe__input {
+  display: flex;
+  align-items: center;
 
-    margin-right: 12px;
+  height: 50px;
+  width: 358px;
 
-    background: none;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: 12px;
 
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
+  background: none;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.form-subscribe-input:focus-within {
-    outline: none;
+.form-subscribe__input:focus-within {
+  outline: none;
 }
 
-.form-subscribe-box input {
-    display: block;
-    height: 50px;
+.subscribe-button {
+  border: none;
+  min-width: 200px;
+  height: 50px;
+  padding: 14px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  color: var(--white-text);
+  background-color: var(--ascent-color);
 }
 
-.form-subscribe-logo {
-    /* display: block; */
-    width: 24px;
-    height: 24px;
-    padding: 0;
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background: #188ce8;
+  cursor: pointer;
 
-    margin-left: 10px;
-
-    fill: var(--white-text);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-subscribe-button {
-    border: none;
-    min-width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    padding: 14px 32px;
+.subscribe-button__logo {
+  width: 24px;
+  height: 24px;
+  padding: 0;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-left: 10px;
 
-    color: var(--white-text);
-    background-color: var(--ascent-color);
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-}
-
-.form-subscribe-button:hover,
-.form-subscribe-button:focus {
-    background: #188CE8;
-    cursor: pointer;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--white-text);
 }

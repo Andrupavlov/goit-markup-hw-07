@@ -1,78 +1,71 @@
-/* футер */
+// Футер
+
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    background-color: var(--footer-hero-color);
+  background-color: var(--footer-hero-color);
 }
 
-.footer .logo {
-    display: block;
-    margin-bottom: 20px;
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
-.footer .logo .logo-2part {
-    color: var(--white-text);
-}
-
-.footer-address {
-    display: block;
-    width: 221px;
-}
-
-/* Физический адрес компании */
-.geo-address {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 9px;
-
-    color: var(--white-text);
-
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-.footer .contacts {
+.footer__block {
     display: block;
 }
 
-.footer-container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+.footer__address {
+  display: block;
+  width: 221px;
 }
 
-.contacts-email {
-    margin-top: 0;
-    margin-bottom: 9px;
+.footer__address-list {
+    display: block;
 }
 
-.footer-address .contacts {
-    color: var(--primary-text-color);
+// Физический адрес компании
+.footer__geo-address {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 9px;
 
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
 
-    text-decoration: none;
+  color: var(--white-text);
 }
 
-/* Почта, телефон - при наведении */
-.footer-address .contacts:hover,
-.footer-address .contacts:focus {
-    color: var(--ascent-color);
+.footer__contacts {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 9px;
 
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 
-    text-decoration: none;
+  color: var(--primary-text-color);
+}
 
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// Почта, телефон - ховер
+.footer__contacts:hover,
+.footer__contacts:focus {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--ascent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
