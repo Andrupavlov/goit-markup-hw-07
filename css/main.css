@@ -330,161 +330,10 @@ p {
 .header {
   border-width: 0px 0px 1px 0px;
   border-style: solid;
-  border-color: #ECECEC;
+  border-color: #ececec;
 }
 
-/* Логотип header */
-/* Общие настройки лого */
-.logo {
-  text-decoration: none;
-}
-
-/* 1й фрагмент лого (по цвету) */
-.logo-1part {
-  color: var(--ascent-color);
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-/* 2й фрагмент лого (по цвету) */
-.logo-2part {
-  color: var(--title-text-color);
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-/* Отступ лоя лого */
-.all-logo {
-  margin-right: 93px;
-}
-
-/* Навигация по сайту */
-/* список меню */
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.site-nav .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--title-text-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav a:hover,
-.site-nav a:focus {
-  color: var(--ascent-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Подсветка активного меню */
-.site-nav .current {
-  color: var(--ascent-color);
-  position: relative;
-}
-
-.site-nav .current::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  bottom: -1px;
-  height: 4px;
-  background-color: var(--ascent-color);
-  border-radius: 2px;
-}
-
-/* Контакты */
-/* Почта, телефон */
-.contacts-header .contacts-logo {
-  display: block;
-  width: 16px;
-  height: 80px;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
-}
-
-.contacts-header .item a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contacts-header {
-  display: block;
-  color: var(--primary-text-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-.contacts-header .contacts {
-  color: var(--primary-text-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-/* Почта, телефон - при наведении */
-.contacts-header .contacts:hover,
-.contacts-header .contacts:focus {
-  color: var(--ascent-color);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  fill: var(--ascent-color);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-header .contacts:hover .contacts-logo,
-.contacts-header .contacts:focus .contacts-logo {
-  fill: var(--ascent-color);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.main-container {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,33 +342,166 @@ p {
           align-items: center;
 }
 
-.main-container-nav {
+/* Логотип */
+/* Общие настройки лого */
+.logo {
+  display: block;
+  text-decoration: none;
+  margin-right: 93px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* 1й фрагмент лого (по цвету) */
+.logo__1part {
+  color: var(--ascent-color);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+/* 2й фрагмент лого (по цвету) */
+.logo__2part {
+  color: var(--title-text-color);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contacts-header {
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.navigation__link--current::after {
+  content: "";
+  display: block;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+  background-color: var(--ascent-color);
+}
+
+.navigation__link--current {
+  color: var(--ascent-color);
+  position: relative;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: var(--ascent-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
 
-.contacts-header .item:not(:last-child) {
+.header-contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.main-container .all-logo {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
+.header-contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
 
-.contacts-header .header-email {
+.header-contacts__logo {
+  display: block;
+  width: 16px;
+  height: 80px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.header-contacts__text {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.header-contacts__link:hover,
+.header-contacts__link:focus {
+  color: var(--ascent-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  fill: var(--ascent-color);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts__link:hover .header-contacts__logo,
+.header-contacts__link:focus .header-contacts__logo {
+  fill: var(--ascent-color);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Герой */

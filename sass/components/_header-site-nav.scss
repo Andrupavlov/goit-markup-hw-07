@@ -1,60 +1,64 @@
-/* Навигация по сайту */
+// Навигация по сайту
 
-/* список меню */
-.site-nav {
-    display: flex;
+.navigation {
+  display: flex;
 }
 
-.site-nav .link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
-    color: var(--title-text-color);
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-
-    text-decoration: none;
+.navigation__list {
+  display: flex;
 }
 
-.site-nav .item:not(:last-child) {
-    margin-right: 50px;
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-    color: var(--ascent-color);
+.navigation__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+  color: var(--title-text-color);
 
-    text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 
-/* Подсветка активного меню */
-.site-nav .current {
-    color: var(--ascent-color);
-    position: relative;
+// Подчеркивание активного пункта меню навигации
+.navigation__link--current::after {
+  content: "";
+  display: block;
+  height: 4px;
+  border-radius: 2px;
+
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+
+  background-color: var(--ascent-color);
 }
 
-.site-nav .current::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    bottom: -1px;
+.navigation__link--current {
+  color: var(--ascent-color);
+  position: relative;
+}
 
-    height: 4px;
-    background-color: var(--ascent-color);
-    border-radius: 2px;
+// Подсветка активного меню
+.navigation__link:hover,
+.navigation__link:focus {
+  color: var(--ascent-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
