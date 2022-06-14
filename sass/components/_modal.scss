@@ -54,21 +54,21 @@
   cursor: pointer;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
-}
 
-.modal-close-button__icon {
-  display: block;
-  width: 11px;
-  height: 11px;
+  &__icon {
+    display: block;
+    width: 11px;
+    height: 11px;
 
-  fill: #000000;
-}
+    fill: #000000;
+  }
 
-.modal-close-button:hover .modal-close-button__icon {
-  fill: var(--ascent-color);
+  &:hover &__icon {
+    fill: var(--ascent-color);
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 // состояние до закрытия модалки

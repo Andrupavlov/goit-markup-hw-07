@@ -2,47 +2,47 @@
 
 .form-subscribe {
   margin-left: 93px;
-}
 
-.form-subscribe__title {
-  margin-bottom: 20px;
+  &__title {
+    margin-bottom: 20px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
 
-  color: var(--white-text);
-}
+    color: var(--white-text);
+  }
 
-.form-subscribe__block {
-  display: flex;
-}
+  &__block {
+    display: flex;
+  }
 
-.form-subscribe__input {
-  display: flex;
-  align-items: center;
+  &__input {
+    display: flex;
+    align-items: center;
 
-  height: 50px;
-  width: 358px;
+    height: 50px;
+    width: 358px;
 
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-right: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 12px;
 
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
 
-  background: none;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.6);
-}
+    background: none;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-.form-subscribe__input:focus-within {
-  outline: none;
+  &__input:focus-within {
+    outline: none;
+  }
 }
 
 .subscribe-button {
@@ -65,23 +65,23 @@
 
   color: var(--white-text);
   background-color: var(--ascent-color);
-}
 
-.subscribe-button:hover,
-.subscribe-button:focus {
-  background: #188ce8;
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    cursor: pointer;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.subscribe-button__logo {
-  width: 24px;
-  height: 24px;
-  padding: 0;
+  &__logo {
+    width: 24px;
+    height: 24px;
+    padding: 0;
 
-  margin-left: 10px;
+    margin-left: 10px;
 
-  fill: var(--white-text);
+    fill: var(--white-text);
+  }
 }

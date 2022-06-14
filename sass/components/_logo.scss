@@ -6,40 +6,40 @@
   text-decoration: none;
   margin-top: auto;
   margin-bottom: auto;
-}
 
-// 1й фрагмент лого (по цвету)
-.logo__1part {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  // 1й фрагмент лого (по цвету)
+  &__1part {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
 
-  color: var(--ascent-color);
-}
+    color: var(--ascent-color);
+  }
 
-// 2й фрагмент лого (по цвету)
-.logo__2part {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  // 2й фрагмент лого (по цвету)
+  &__2part {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
 
-  color: var(--title-text-color);
-}
+    color: var(--title-text-color);
+  }
 
-// Модификаторы для header
-.logo--header-margin {
-  margin-right: 93px;
-}
+  // Модификаторы для header
+  &--header-margin {
+    margin-right: 93px;
+  }
 
-// Модификаторы для footer
-.logo__2part--whitw-color {
-  color: var(--white-text);
-}
+  // Модификаторы для footer
+  &__2part--whitw-color {
+    color: var(--white-text);
+  }
 
-.logo--footer-margin {
-  margin-bottom: 20px;
+  &--footer-margin {
+    margin-bottom: 20px;
+  }
 }

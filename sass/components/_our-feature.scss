@@ -3,45 +3,45 @@
 .our-feature {
   display: flex;
   justify-content: space-between;
-}
 
-.our-feature__card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
 
-  background-color: var(--second-background-color);
-}
+    background-color: var(--second-background-color);
+  }
 
-.our-feature__pic {
-  display: block;
-  width: 70px;
-  height: 70px;
-}
+  &__pic {
+    display: block;
+    width: 70px;
+    height: 70px;
+  }
 
-// Заголовок преимуществ
-.our-feature__title {
-  margin-top: 0;
-  margin-bottom: 10px;
+  // Заголовок преимуществ
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-  text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
 
-  color: var(--title-text-color);
-}
+    color: var(--title-text-color);
+  }
 
-// Описание преимуществ, каждого типа
-.our-feature__paragraph {
-  width: 270px;
+  // Описание преимуществ, каждого типа
+  &__paragraph {
+    width: 270px;
 
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-  line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }

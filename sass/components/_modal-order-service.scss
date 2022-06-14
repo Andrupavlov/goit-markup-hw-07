@@ -1,132 +1,172 @@
 // Оформление формы модалки
 
-// Заголовок -----------------------------------------------------------
-.form__title {
-  display: flex;
-  justify-content: center;
+.form {
+  // Заголовок
+  &__title {
+    display: flex;
+    justify-content: center;
 
-  margin-bottom: 12px;
+    margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-  color: var(--title-text-color);
+    color: var(--title-text-color);
+  }
+
+  // Кнопка отправки формы
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  // Содержимое кнопки
+  &__button-content {
+    border: none;
+    min-width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 14px 32px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    color: var(--white-text);
+    background-color: var(--ascent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+
+  &__button-content:hover,
+  &__button-content:focus {
+    background: #188ce8;
+    cursor: pointer;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 // Данные от пользователя ----------------------------------------------
 .form-data {
   margin-bottom: 20px;
-}
 
-// Поле ввода ----------------------------------------------------------
-.form-data__field {
-  display: flex;
-  flex-direction: column;
-  background-color: none;
-}
+  // Поле ввода ----------------------------------------------------------
+  &__field {
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+  }
 
-.form-data .form-data__field:not(:last-child) {
-  margin-bottom: 10px;
-}
+  &__field:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
-// Описание поля -------------------------------------------------------
-.form-data__label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  // Описание поля -------------------------------------------------------
+  &__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
 
-  margin-bottom: 4px;
+    margin-bottom: 4px;
 
-  color: var(--primary-text-color);
-}
+    color: var(--primary-text-color);
+  }
 
-// Прямоугольник ввода -------------------------------------------------
-.form-data__rectangle {
-  position: relative;
-}
+  // Прямоугольник ввода -------------------------------------------------
+  &__rectangle {
+    position: relative;
+  }
 
-.form-data__input {
-  height: 40px;
-  width: 100%;
+  &__input {
+    height: 40px;
+    width: 100%;
 
-  padding-right: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 41px;
-  margin: 0;
+    padding-right: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 41px;
+    margin: 0;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-}
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+  }
 
-.form-data__input:focus-within {
-  border: 1px solid var(--ascent-color);
-  outline: none;
+  &__input:focus-within {
+    border: 1px solid var(--ascent-color);
+    outline: none;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-// Иконки данных -------------------------------------------------------
-.form-data__icon {
-  /* fill: var(--title-text-color); */
-  width: 18px;
-  height: 18px;
+  // Иконки данных -------------------------------------------------------
+  &__icon {
+    /* fill: var(--title-text-color); */
+    width: 18px;
+    height: 18px;
 
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-}
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-.form-data__rectangle:focus-within .form-data__icon {
-  fill: var(--ascent-color);
+  &__rectangle:focus-within &__icon {
+    fill: var(--ascent-color);
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-// Поле ввода комментария ----------------------------------------------
-.form-data__text-input {
-  resize: none;
-  border: none;
-  height: 120px;
-  width: 100%;
+  // Поле ввода комментария ----------------------------------------------
+  &__text-input {
+    resize: none;
+    border: none;
+    height: 120px;
+    width: 100%;
 
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
 
-.form-data__text-input::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  &__text-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
-}
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-.form-data__text-input:focus-visible {
-  border: 1px solid var(--ascent-color);
-  outline: none;
+  &__text-input:focus-visible {
+    border: 1px solid var(--ascent-color);
+    outline: none;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 // Чек бокс -------------------------------------------------------------
@@ -136,84 +176,47 @@
   align-items: center;
   height: 24px;
   margin-bottom: 30px;
-}
 
-.checkbox__input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
+  &__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
 
-.checkbox__logo {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--title-text-color);
-  border-radius: 2px;
+  &__logo {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
 
-  margin-right: 7px;
-}
+    margin-right: 7px;
+  }
 
-.checkbox__agreement-link {
-  color: var(--ascent-color);
-  margin-left: 4px;
-}
+  &__agreement-link {
+    color: var(--ascent-color);
+    margin-left: 4px;
+  }
 
-.checkbox__svg {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
+  &__svg {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
 
-  opacity: 0;
-}
+    opacity: 0;
+  }
 
-.checkbox__input:checked + .checkbox__logo .checkbox__svg {
-  opacity: 1;
+  &__input:checked + &__logo &__svg {
+    opacity: 1;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.checkbox__input:checked + .checkbox__logo {
-  border: none;
+  &__input:checked + &__logo {
+    border: none;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-// Кнопка отправки формы ----------------------------------------------
-.form__button {
-  display: flex;
-  justify-content: center;
-}
-
-.form__button button {
-  border: none;
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  padding: 14px 32px;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  color: var(--white-text);
-  background-color: var(--ascent-color);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-}
-
-.form__button button:hover,
-.form__button button:focus {
-  background: #188ce8;
-  cursor: pointer;
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

@@ -3,34 +3,34 @@
 .what-doing {
   display: flex;
   justify-content: space-between;
-}
 
-.what-doing__card {
-  position: relative;
-}
+  &__card {
+    position: relative;
+  }
 
-.what-doing__block {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__block {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  width: 100%;
-  height: 70px;
+    width: 100%;
+    height: 70px;
 
-  bottom: 0;
+    bottom: 0;
 
-  background: rgba(47, 48, 58, 0.8);
-}
+    background: rgba(47, 48, 58, 0.8);
+  }
 
-.what-doing__text {
-  display: block;
+  &__text {
+    display: block;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-  color: var(--white-text);
+    color: var(--white-text);
+  }
 }

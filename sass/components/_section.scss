@@ -6,25 +6,27 @@
   padding-bottom: 94px;
 
   color: var(--primary-text-color);
-}
 
-// Заголовок секции
-.section__title {
-  margin-top: 0;
-  margin-bottom: 50px;
+  // Заголовок секции
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
 
-  color: var(--title-text-color);
-}
+    color: var(--title-text-color);
+  }
 
-.section--no-padding-top {
-  padding-top: 0;
-}
+  // Модификаторы для секций
 
-.section--background-color {
-  background-color: var(--second-background-color);
+  &--no-padding-top {
+    padding-top: 0;
+  }
+
+  &--background-color {
+    background-color: var(--second-background-color);
+  }
 }

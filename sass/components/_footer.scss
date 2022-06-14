@@ -5,67 +5,67 @@
   padding-bottom: 60px;
 
   background-color: var(--footer-hero-color);
-}
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
+  &__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 
-.footer__block {
+  &__block {
     display: block;
-}
+  }
 
-.footer__address {
-  display: block;
-  width: 221px;
-}
-
-.footer__address-list {
+  &__address {
     display: block;
-}
+    width: 221px;
+  }
 
-// Физический адрес компании
-.footer__geo-address {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 9px;
+  &__address-list {
+    display: block;
+  }
 
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
+  // Физический адрес компании
+  &__geo-address {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 9px;
 
-  color: var(--white-text);
-}
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
 
-.footer__contacts {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 9px;
+    color: var(--white-text);
+  }
 
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+  &__contacts {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 9px;
 
-  color: var(--primary-text-color);
-}
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 
-// Почта, телефон - ховер
-.footer__contacts:hover,
-.footer__contacts:focus {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+    color: var(--primary-text-color);
+  }
 
-  color: var(--ascent-color);
+  // Почта, телефон - ховер
+  &__contacts:hover,
+  &__contacts:focus {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--ascent-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

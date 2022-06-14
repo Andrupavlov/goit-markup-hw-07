@@ -1,5 +1,5 @@
 // Все переменные ------------------------------
-@import "./utils/vars";
+@import "./utils/variables";
 // Нормализация css через файл -----------------
 @import "./utils/normalize";
 
@@ -8,7 +8,7 @@
 
 @import "./components/header";
 @import "./components/logo";
-@import "./components/header-site-nav";
+@import "./components/header-navigation";
 @import "./components/header-contacts";
 
 @import "./components/hero";
@@ -27,6 +27,6 @@
 @import "./components/modal";
 @import "./components/modal-order-service";
 
-// Страница портфолио --------------------------
+// Портфолио -----------------------------------
 @import "./components/portfolio";
 @import "./components/portfolio-card";
